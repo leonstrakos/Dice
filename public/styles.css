@@ -595,3 +595,7 @@
 .contact-social-links{display:flex;flex-direction:column;gap:19px}
 @media(max-width:950px){.featured-esn-open{grid-template-columns:minmax(290px,.85fr) minmax(0,1.15fr)}.featured-esn-media{grid-template-columns:78px minmax(0,1fr)}.featured-esn-media .featured-esn-logo{padding:9px}}
 @media(max-width:760px){.featured-esn-open{grid-template-columns:1fr}.featured-esn-media{min-height:250px;grid-template-columns:85px minmax(0,1fr)}.featured-esn-media .featured-esn-logo,.featured-esn-media .featured-esn-photo{min-height:250px}.featured-esn-media .featured-esn-photo img{height:250px;min-height:250px;object-position:center 70%}.experience-list-v10 .chess-row-inline{grid-template-columns:minmax(0,1fr) 60px;gap:12px}.modal-dice-grid .modal-photo-main img{height:210px}}
+
+/* Image quality: full-resolution cropped Advent group photo, with WebP fallback */
+.featured-esn-media .featured-esn-photo picture{display:block;width:100%;height:100%}
+.case-dialog .modal-photo picture{display:block;line-height:0}

@@ -350,7 +350,7 @@ const caseStudies = {
     index:'EXPERIENCE / ESN',title:'Erasmus Student Network',label:'Marketing · Events · Community',
     links:[{label:'UNIOS · Instagram',url:'https://www.instagram.com/p/DeeR6jils4z/?cplk=MWJpNGNyenl4MDJsdA=='}],
     media:[
-      {src:'assets/esn-advent.webp',hr:'Adventsko druženje / ESN',en:'ESN Advent gathering'},
+      {src:'assets/esn-advent-hq.avif',fallback:'assets/esn-advent.webp',hr:'Adventsko druženje / ESN',en:'ESN Advent gathering'},
       {type:'video',src:'assets/DSCF9704_2.web.mp4',poster:'assets/DSCF9704_2-poster.jpg',hr:'Studentsko događanje — video dokumentacija 01',en:'Student event — video documentation 01'},
       {type:'video',src:'assets/DSCF9705_1.web.mp4',poster:'assets/DSCF9705_1-poster.jpg',hr:'Studentsko događanje — video dokumentacija 02',en:'Student event — video documentation 02'}
     ],
@@ -449,7 +449,7 @@ function safeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&
 function renderCase(id){
   const d=caseStudies[id];if(!d)return;openCaseId=id;const t=d[currentLang];
   document.getElementById('modal-kicker').textContent=d.index;
-  const photos=d.media ? `<div class="modal-photo-grid ${d.media.some(x=>x.type==='video')?'modal-video-grid':''} ${(id==='hrs'||id==='ljingle')?'modal-screens-grid':(id==='dice'?'modal-dice-grid':'')}">${d.media.map((x,i)=>`<figure class="modal-photo${i===0?' modal-photo-main':''}">${x.type==='video'?`<video controls playsinline preload="metadata" poster="${safeHTML(x.poster)}"><source src="${safeHTML(x.src)}" type="video/mp4"></video>`:`<img src="${safeHTML(x.src)}" alt="${safeHTML(currentLang==='hr'?x.hr:x.en)}" loading="lazy">`}<figcaption>${safeHTML(currentLang==='hr'?x.hr:x.en)}</figcaption></figure>`).join('')}</div>` : '';
+  const photos=d.media ? `<div class="modal-photo-grid ${d.media.some(x=>x.type==='video')?'modal-video-grid':''} ${(id==='hrs'||id==='ljingle')?'modal-screens-grid':(id==='dice'?'modal-dice-grid':'')}">${d.media.map((x,i)=>`<figure class="modal-photo${i===0?' modal-photo-main':''}">${x.type==='video'?`<video controls playsinline preload="metadata" poster="${safeHTML(x.poster)}"><source src="${safeHTML(x.src)}" type="video/mp4"></video>`:`<picture>${x.fallback?`<source srcset="${safeHTML(x.src)}" type="image/avif">`:``}<img src="${safeHTML(x.fallback||x.src)}" alt="${safeHTML(currentLang==='hr'?x.hr:x.en)}" loading="lazy"></picture>`}<figcaption>${safeHTML(currentLang==='hr'?x.hr:x.en)}</figcaption></figure>`).join('')}</div>` : '';
   const links=d.links ? `<div class="modal-links">${d.links.map(x=>`<a href="${safeHTML(x.url)}" target="_blank" rel="noopener noreferrer">${safeHTML(x.label)} ↗</a>`).join('')}</div>` : '';
   modalContent.innerHTML=`<div class="modal-content-top"><h2 id="modal-title">${safeHTML(t.title||d.title)}</h2><p class="modal-sub">${safeHTML(t.lead)}</p></div>${photos}<div class="modal-details"><div><span class="modal-label">${currentLang==='hr'?'MOJA ULOGA':'MY ROLE'}</span><p>${safeHTML(t.role)}</p></div><div><span class="modal-label">${currentLang==='hr'?'KONTEKST':'CONTEXT'}</span><p>${safeHTML(t.context)}</p></div></div><div class="modal-body">${t.paragraphs.map(p=>`<p>${safeHTML(p)}</p>`).join('')}<h3>${currentLang==='hr'?'Područja rada':'Areas of work'}</h3><ul>${t.items.map(p=>`<li>${safeHTML(p)}</li>`).join('')}</ul>${t.note?`<div class="modal-note">${safeHTML(t.note)}</div>`:''}${links}</div>`;
 }
