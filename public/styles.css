@@ -577,3 +577,21 @@
 @media(max-width:1000px){.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.featured-esn-photo{min-height:260px;border-right:0;border-bottom:1px solid #eee}.featured-esn-photo img{min-height:260px;height:260px;object-position:center 70%}.contact-grid{grid-template-columns:1fr}}
 @media(max-width:440px){.hero-action-links{align-items:flex-start}.hero-action-links .arrow-link{min-width:145px}}
+
+/* November v12 refinement — HRS bell close-up, chess alignment and ESN split-media */
+.experience-list-v10 .chess-row-inline{display:grid;grid-template-columns:minmax(0,1fr) 76px;gap:20px;align-items:start}
+.experience-list-v10 .chess-row-text{grid-column:1;grid-row:1;min-width:0}
+.experience-list-v10 .chess-row-logo{grid-column:2;grid-row:1;justify-self:end;margin:0}
+.section-work .hrs-clean-art{overflow:hidden}
+.section-work .hrs-clean-art>img{transform:scale(1.85);transform-origin:center 43%;object-position:50% 40%;transition:transform .45s ease}
+.featured-esn-open{grid-template-columns:minmax(340px,.92fr) minmax(0,1.08fr)}
+.featured-esn-media{display:grid;grid-template-columns:100px minmax(0,1fr);min-height:290px;overflow:hidden}
+.featured-esn-media .featured-esn-logo{display:flex;align-items:center;justify-content:center;min-height:290px;padding:12px;background:#fff;border-right:1px solid #e6e1d8}
+.featured-esn-media .featured-esn-logo img{width:100%;height:auto;max-width:85px;max-height:130px;object-fit:contain}
+.featured-esn-media .featured-esn-photo{min-height:290px;background:#171717;border-right:1px solid #e6e1d8}
+.featured-esn-media .featured-esn-photo img{width:100%;height:100%;min-height:290px;object-fit:cover;object-position:50% 70%}
+.modal-dice-grid .modal-photo-main{grid-column:auto}
+.modal-dice-grid .modal-photo-main img{height:255px;object-position:center}
+.contact-social-links{display:flex;flex-direction:column;gap:19px}
+@media(max-width:950px){.featured-esn-open{grid-template-columns:minmax(290px,.85fr) minmax(0,1.15fr)}.featured-esn-media{grid-template-columns:78px minmax(0,1fr)}.featured-esn-media .featured-esn-logo{padding:9px}}
+@media(max-width:760px){.featured-esn-open{grid-template-columns:1fr}.featured-esn-media{min-height:250px;grid-template-columns:85px minmax(0,1fr)}.featured-esn-media .featured-esn-logo,.featured-esn-media .featured-esn-photo{min-height:250px}.featured-esn-media .featured-esn-photo img{height:250px;min-height:250px;object-position:center 70%}.experience-list-v10 .chess-row-inline{grid-template-columns:minmax(0,1fr) 60px;gap:12px}.modal-dice-grid .modal-photo-main img{height:210px}}
