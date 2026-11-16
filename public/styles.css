@@ -566,3 +566,14 @@
 /* v12 final hero sizing: original logotype at headline scale */
 .hero .hero-brand-image-large{width:min(100%,1280px)!important;max-width:none!important;max-height:none!important;height:auto!important;margin:45px auto 40px!important}
 @media(max-width:760px){.hero .hero-brand-image-large{width:100%!important;margin:35px auto!important}}
+
+/* Portfolio v12 update — additional links and featured ESN Advent photo */
+.hero-action-links{display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.hero-action-links .arrow-link{min-width:165px;justify-content:space-between}
+.featured-esn-photo{display:block;min-height:290px;overflow:hidden;background:#ddd8d0;border-right:1px solid #e6e1d8}
+.featured-esn-photo img{display:block;width:100%;height:100%;min-height:290px;object-fit:cover;object-position:center 72%}
+.about-rotation-overlay{justify-content:flex-end;background:linear-gradient(transparent,rgba(0,0,0,.27))}
+.contact-grid{grid-template-columns:1fr 1.55fr .9fr 1fr;gap:24px}
+@media(max-width:1000px){.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.featured-esn-photo{min-height:260px;border-right:0;border-bottom:1px solid #eee}.featured-esn-photo img{min-height:260px;height:260px;object-position:center 70%}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:440px){.hero-action-links{align-items:flex-start}.hero-action-links .arrow-link{min-width:145px}}

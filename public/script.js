@@ -2,7 +2,7 @@
 const translations = {
   "hr": {
     "exp.esn.more":"Fotografije i videi studentskih događanja ↗",
-    "exp.fashion":"Samostalni modni koncepti, logotip, vizualni identitet, tipografija i grafičke studije.",
+    "exp.fashion":"Samostalni modni koncepti, vizualni identitet i tipografija.",
     "exp.chess.link":"Grand Chess Tour 2024 ↗",
     "exp.chivas.link":"Chivas × Charles Leclerc — SE!ZE ↗",
     "exp.linkintro":"Objave i dokumentacija događanja",
@@ -86,7 +86,7 @@ const translations = {
     "project.latin.short": "Nastavni projekt: dvojezična web-aplikacija za pretraživanje, spremanje i čitanje latinskih izreka.",
     "project.esn.title": "Erasmus Student Network",
     "project.esn.short": "Marketing, organizacija događanja, Buddy Programme i koordinacija volontera.",
-    "project.ljingle.short": "Vlastita aplikacija za bilješke, čitanje i organizaciju znanja.",
+    "project.ljingle.short": "LJingle spaja praćenje vremena, katalog medija, bilješke, čitanje i organizaciju znanja.",
     "project.cards.title": "Izdavaštvo",
     "project.cards.short": "Autorski špil igraćih karata, Kickstarter i iskustvo u proizvodnji tiskanog proizvoda.",
     "project.fashion.title": "Fashion & Visual Identity",
@@ -112,7 +112,7 @@ const translations = {
     "proposal.a.title": "Kvizovi i druženja",
     "proposal.b.title": "Predavanja i radionice",
     "proposal.c.title": "Karte za događanja",
-    "proposal.lead": "Prijedlog manjeg programa događanja koji bi dodatno povezao DICE sa studentima i lokalnom zajednicom u Osijeku.",
+    "proposal.lead": "Prva faza projekta jačanja prisutnosti DICE-a u lokalnoj zajednici kroz događanja otvorena svima u Osijeku.",
     "proposal.a": "Neformalni tematski kvizovi i timska druženja u suradnji sa studentskim udrugama. Format upoznavanja zaposlenika, studenata različitih fakulteta i budućih kandidata.",
     "proposal.b": "Kratka, pristupačna predavanja i radionice o tome kako nastaju digitalni proizvodi, kako surađuju timovi i što programeri rade u praksi.",
     "proposal.c": "Koncept fizičkog špila s pitanjima i izazovima za networking, radionice i timska događanja, povezan s mojim iskustvom u izdavaštvu karata.",
@@ -133,7 +133,9 @@ const translations = {
     "contact.eyebrow": "05 / KONTAKT",
     "contact.heading": "Kontakt.",
     "contact.intro": "Za suradnju, dodatne informacije ili razgovor o projektima.",
-    "contact.pending": "Adresa nije aktivna dok ne registriram domenu i postavim poštu.",
+    "contact.email": "E-MAIL",
+    "contact.instagram": "INSTAGRAM",
+    "hero.github": "GitHub profil",
     "contact.top": "Natrag na vrh",
     "footer.caption": "OSOBNI PORTFOLIO",
     "modal.close": "Zatvori",
@@ -141,7 +143,7 @@ const translations = {
   },
   "en": {
     "exp.esn.more":"Student events: photographs and videos ↗",
-    "exp.fashion":"Independent fashion concepts, logo design, visual identity, typography and graphic studies.",
+    "exp.fashion":"Independent fashion concepts, visual identity and typography.",
     "exp.chess.link":"Grand Chess Tour 2024 ↗",
     "exp.chivas.link":"Chivas × Charles Leclerc — SE!ZE ↗",
     "exp.linkintro":"Event coverage and documentation",
@@ -225,7 +227,7 @@ const translations = {
     "project.latin.short": "An academic project: a bilingual PWA for searching, bookmarking and reading Latin expressions.",
     "project.esn.title": "Erasmus Student Network",
     "project.esn.short": "Marketing, event organisation, Buddy Programme and volunteer coordination.",
-    "project.ljingle.short": "An independent app for notes, reading and knowledge organisation.",
+    "project.ljingle.short": "An app for time tracking, a media catalogue, notes, reading and knowledge organisation.",
     "project.cards.title": "Publishing",
     "project.cards.short": "An original playing-card deck, Kickstarter and experience with printed-product production.",
     "project.fashion.title": "Fashion & Visual Identity",
@@ -251,7 +253,7 @@ const translations = {
     "proposal.a.title": "Quizzes and meetups",
     "proposal.b.title": "Talks and workshops",
     "proposal.c.title": "Cards for events",
-    "proposal.lead": "A small-scale event programme designed to connect DICE with university students and the local community in Osijek.",
+    "proposal.lead": "The first phase of a wider project to strengthen DICE’s presence in the Osijek community through accessible public events.",
     "proposal.a": "Casual themed quizzes and group events in partnership with student organisations. A way for staff, students from different faculties and prospective candidates to meet.",
     "proposal.b": "Short, accessible talks and workshops about how digital products are built, how teams collaborate and what software development looks like in practice.",
     "proposal.c": "A proposed physical deck of conversation prompts and activities for networking, workshops and team events, drawing on my experience with playing-card publishing.",
@@ -272,7 +274,9 @@ const translations = {
     "contact.eyebrow": "05 / CONTACT",
     "contact.heading": "Contact.",
     "contact.intro": "For collaboration, additional information or a conversation about my work.",
-    "contact.pending": "This email address is not active until the domain and mail are set up.",
+    "contact.email": "EMAIL",
+    "contact.instagram": "INSTAGRAM",
+    "hero.github": "GitHub profile",
     "contact.top": "Back to top",
     "footer.caption": "PERSONAL PORTFOLIO",
     "modal.close": "Close",
@@ -344,7 +348,7 @@ const caseStudies = {
     index:'EXPERIENCE / ESN',title:'Erasmus Student Network',label:'Marketing · Events · Community',
     links:[{label:'UNIOS · Instagram',url:'https://www.instagram.com/p/DeeR6jils4z/?cplk=MWJpNGNyenl4MDJsdA=='}],
     media:[
-      {src:'assets/esn-party.jpg',hr:'Studentsko druženje / ESN',en:'Student gathering / ESN'},
+      {src:'assets/esn-advent.webp',hr:'Adventsko druženje / ESN',en:'ESN Advent gathering'},
       {type:'video',src:'assets/DSCF9704_2.web.mp4',poster:'assets/DSCF9704_2-poster.jpg',hr:'Studentsko događanje — video dokumentacija 01',en:'Student event — video documentation 01'},
       {type:'video',src:'assets/DSCF9705_1.web.mp4',poster:'assets/DSCF9705_1-poster.jpg',hr:'Studentsko događanje — video dokumentacija 02',en:'Student event — video documentation 02'}
     ],
@@ -361,16 +365,16 @@ const caseStudies = {
       {src:'assets/ljingle-study.webp',hr:'Study — flashcards, japanski i Anki uvoz',en:'Study — flashcards, Japanese and Anki import'},
       {src:'assets/ljingle-editor.webp',hr:'Zapisi — uređivač bilješki i oznake',en:'Notes — editor and custom tags'}
     ],
-    hr:{lead:'React Native / Expo aplikacija za osobnu organizaciju sadržaja, bilješke i učenje.',role:'Razvoj aplikacije, UX/UI, informacijska arhitektura i vizualni identitet',context:'Samostalni projekt · Android · razvoj u tijeku',paragraphs:[
-      'LJingle je modularna aplikacija koju razvijam za osobnu biblioteku sadržaja i bilježaka. U Katalogu se organiziraju knjige, filmovi, serije, igre i kolekcije, uz pretraživanje i različite prikaze.',
-      'Modul Zapisi okuplja bilješke, slike, označene dijelove teksta i flashcards. Study dio namijenjen je učenju i ponavljanju kartica, uz rad sa špilovima i Anki uvozom. Aplikacija uključuje i čitač dokumenata te vizualno povezivanje znanja.',
+    hr:{lead:'LJingle spaja praćenje vremena, katalog sadržaja, bilješke, čitanje, učenje i organizaciju znanja — svojevrsni spoj Letterboxda, Goodreadsa, Obsidiana, čitača i Ankija.',role:'Razvoj aplikacije, UX/UI, informacijska arhitektura i vizualni identitet',context:'Samostalni projekt · Android · razvoj u tijeku',paragraphs:[
+      'LJingle je modularna aplikacija za praćenje vremena i aktivnosti te organizaciju osobne biblioteke sadržaja. Katalog okuplja knjige, filmove, serije, igre i kolekcije, uz statuse, napredak, pretraživanje i različite prikaze — nalik osobnom Letterboxdu i Goodreadsu.',
+      'Zapisi povezuju bilješke, slike, označene ulomke i vizualnu organizaciju znanja nalik Obsidianu. Ugrađeni čitač služi čitanju dokumenata, a Study uključuje kartice za učenje i Anki uvoz za ponavljanje.',
       'Naglasak pri razvoju je na arhitekturi više modula, prilagodljivom sučelju, tipografiji, navigaciji i iterativnim UX doradama. Priloženi prikazi su stvarne snimke Android aplikacije.'
-    ],items:['React Native · Expo · TypeScript','Katalog: knjige, filmovi, serije, igre, kolekcije','Zapisi: bilješke, highlights i slike','Study: flashcards, ponavljanje i Anki uvoz','Čitač dokumenata i Knowledge Constellation','UI teme, navigacija i modularni UX'],note:''},
-    en:{lead:'A React Native / Expo application for personal content organisation, notes and studying.',role:'App development, UX/UI, information architecture and visual identity',context:'Independent project · Android · under active development',paragraphs:[
-      'LJingle is a modular app I am developing for cataloguing personal media and taking notes. Its Catalogue organises books, films, TV series, games and collections, with search and multiple views.',
-      'The Notes module brings together written notes, images, highlights and flashcards. Study supports deck-based reviewing and Anki imports. The app also includes a document reader and visual connections between related knowledge.',
+    ],items:['React Native · Expo · TypeScript','Praćenje vremena i aktivnosti · katalog knjiga, filmova, serija i igara','Zapisi: bilješke, highlights i slike','Study: flashcards, ponavljanje i Anki uvoz','Čitač dokumenata i Knowledge Constellation','UI teme, navigacija i modularni UX'],note:''},
+    en:{lead:'LJingle combines time tracking, a personal media catalogue, note-taking, reading, studying and knowledge organisation — inspired by Letterboxd, Goodreads, Obsidian, e-readers and Anki.',role:'App development, UX/UI, information architecture and visual identity',context:'Independent project · Android · under active development',paragraphs:[
+      'LJingle is a modular app for tracking time and activities and organising a personal media library. The Catalogue covers books, films, TV series, games and collections, with status, progress tracking, search and multiple views — drawing on Letterboxd and Goodreads.',
+      'Notes combines writing, images, highlights and visual knowledge connections reminiscent of Obsidian. The built-in document reader supports reading, while Study adds flashcards, review tools and Anki imports.',
       'The work focuses on cross-module information architecture, configurable themes, typography, navigation and iterative UX improvements. The screens shown are from the actual Android application.'
-    ],items:['React Native · Expo · TypeScript','Catalogue: books, films, series, games and collections','Notes: writing, highlights and images','Study: flashcards, reviewing and Anki imports','Document reader and Knowledge Constellation','Visual themes, navigation and modular UX'],note:''}
+    ],items:['React Native · Expo · TypeScript','Time and activity tracking · catalogue of books, films, TV and games','Notes: writing, highlights and images','Study: flashcards, reviewing and Anki imports','Document reader and Knowledge Constellation','Visual themes, navigation and modular UX'],note:''}
   },
   cards: {
     index:'04 / IZDAVAŠTVO',title:'Izdavaštvo',label:'Product design · Publishing · Kickstarter · Print',
@@ -394,19 +398,13 @@ const caseStudies = {
     ],items:['Deck design, illustration and print production','Packaging, finishing and iridescent edges','Publishing and production with Cartamundi','Kickstarter product presentation'],note:'The first three visuals are AI-styled renders; the final three photographs show the physical deck.'}
   },
   fashion: {
-    media:[
-      {src:'assets/monogram.jpg',hr:'Logotip Leon Strakoš',en:'Leon Strakoš brand wordmark'},
-      {src:'assets/star-study-01.jpg',hr:'Grafička studija / 01',en:'Graphic study / 01'},
-      {src:'assets/star-study-02.jpg',hr:'Grafička studija / 02',en:'Graphic study / 02'},
-      {src:'assets/star-study-03.jpg',hr:'Grafička studija / 03',en:'Graphic study / 03'}
-    ],
     index:'EXPERIENCE / FASHION',title:'Fashion & Visual Identity',label:'Fashion · Art direction · Brand identity',
     hr:{lead:'Razvoj vlastitih modnih i grafičkih koncepata s naglaskom na tipografiju, simbole, odjevne detalje i vizualni identitet.',role:'Kreativni koncept, vizualni identitet i modni dizajn',context:'Neovisni kreativni projekt',paragraphs:['Modni i povezani vizualni koncepti istražuju kako oblikovati prepoznatljiv jezik brenda kroz sustav simbola, odjevne predmete i grafičku komunikaciju.','Inspiracije uključuju heraldiku, sunce, zvono i povijesnu tipografiju. Naglasak portfolija je na dizajnerskom procesu i mogućoj primjeni tih elemenata na odjeći, oznakama, ambalaži i digitalnim materijalima.'],items:['Dizajn logotipa i vizualnog sustava','Modni koncepti i detalji odjevnih predmeta','Tipografija, grafičke aplikacije i storytelling'],note:''},
     en:{lead:'Independent fashion and graphic concepts focused on typography, symbols, garment details and visual identity.',role:'Creative concept, visual identity and fashion design',context:'Independent creative project',paragraphs:['Fashion and related concepts explore how to build a recognisable visual language through symbols, garments and graphic communication.','References include heraldry, the sun, bells and historical typography. The portfolio focuses on the design process and how these elements can be applied to clothing, labels, packaging and digital materials.'],items:['Logo and visual-system design','Fashion concepts and garment details','Typography, graphic applications and brand narratives'],note:''}
   },
 
 dice: {
-  index:'05 / DICE PROPOSAL',title:'DICE — Beyond the Code',label:'Marketing proposal · Event formats · Community outreach',
+  index:'05 / DICE PROPOSAL',title:'Roll with DICE',label:'Marketing proposal · Event formats · Community outreach',
   media:[
     {src:'assets/dice-poster.webp',hr:'Roll with DICE — ključni vizual prijedloga',en:'Roll with DICE — key proposal visual'},
       {src:'assets/dice-quiz-night.webp',hr:'DICE Quiz Night — vizual formata',en:'DICE Quiz Night — event visual'},
@@ -414,8 +412,8 @@ dice: {
     {src:'assets/dice-sessions.webp',hr:'DICE Sessions — kratka javna predavanja',en:'DICE Sessions — short public talks'},
     {src:'assets/dice-afterhours.webp',hr:'DICE After Hours — neformalni društveni format',en:'DICE After Hours — informal social format'}
   ],
-  hr:{title:'DICE / Beyond the Code',lead:'DICE izvan ekrana. Kvizovi, turniri, javna predavanja i druženja otvorena svima u Osijeku.',role:'Koncept kampanje, program događanja i digitalna komunikacija',context:'Osijek · javni program događanja · employer branding i community outreach',paragraphs:['Ideja je približiti DICE široj lokalnoj publici kroz događanja koja povezuju društveni život, lokalnu kulturu i digitalnu komunikaciju. Umjesto da se DICE predstavlja isključivo kroz proizvode, projekte i radna mjesta, javnost bi ga upoznavala kroz ljude koji ondje rade.','Kampanja bi kombinirala društvena događanja, pristupačan edukativni sadržaj i digitalnu promociju. Predloženi formati su DICE Quiz Night, DICE Table Club, DICE Sessions i DICE After Hours — svaki s mogućnošću redovite produkcije fotografija, kratkih videa, recap objava i grafičkih materijala.','Važan dio prijedloga je da svaki događaj proizvodi sadržaj. Komunikacija bi imala četiri koraka: prije događaja najava i Reel, tijekom događaja dokumentacija i kratki intervjui, nakon događaja galerija i recap video, a dugoročno arhiva i kalendar događanja na DICE-ovu webu.','Koncept se temelji na mom iskustvu u organizaciji međunarodnih i studentskih događanja, vođenju programa i volonterskih timova, javnom nastupu te razvoju vizualnih i digitalnih projekata.'],items:['DICE Quiz Night — kvizovi otvoreni široj publici','DICE Table Club — šah, bela, briškula i trešeta','DICE Sessions — kratka predavanja o tehnologiji i digitalnim proizvodima','DICE After Hours — neformalna društvena događanja','Prije / tijekom / nakon / arhiva — sadržajni ciklus za svako događanje'],note:''},
-  en:{title:'DICE / Beyond the Code',lead:'DICE beyond the screen — quizzes, tournaments, short talks and social events open to the public in Osijek.',role:'Campaign concept, event programming and digital communication',context:'Osijek · public event programme · employer branding and community outreach',paragraphs:['The idea is to bring DICE closer to a broader local audience through events that connect social life, local culture and digital communication. Rather than presenting DICE only through products, projects and jobs, the company would be introduced through the people who work there.','The campaign combines social events, accessible educational content and digital promotion. The proposed formats are DICE Quiz Night, DICE Table Club, DICE Sessions and DICE After Hours, each designed to generate photography, short video, recap posts and graphic promotional materials.','A key part of the concept is that every event produces content. Communication would follow four stages: pre-event promotion and reels, on-site documentation and short interviews, post-event galleries and recap videos, and a long-term website archive and calendar.','The proposal builds on my experience in organising international and student events, running programmes and volunteer teams, public speaking, and developing visual and digital projects.'],items:['DICE Quiz Night — public quiz format','DICE Table Club — chess and local card-game evenings','DICE Sessions — short talks on technology and digital products','DICE After Hours — informal social events','Before / during / after / archive — a content cycle for each event'],note:''}
+  hr:{title:'Roll with DICE',lead:'Prvi korak projekta približavanja DICE-a lokalnoj zajednici: kvizovi, turniri, javna predavanja i kavna druženja dostupna svima u Osijeku.',role:'Koncept kampanje, program događanja i digitalna komunikacija',context:'Osijek · javni program događanja · employer branding i community outreach',paragraphs:['Roll with DICE zamišljen je kao prvi korak dugoročnog jačanja prisutnosti DICE-a u lokalnoj zajednici. Kroz kvizove, turnire, javna predavanja i kavna druženja dostupna svima u Osijeku, tvrtka bi bila bliža građanima, studentima i budućim suradnicima.','Kampanja bi kombinirala društvena događanja, pristupačan edukativni sadržaj i digitalnu promociju. Predloženi formati su DICE Quiz Night, DICE Table Club, DICE Sessions i DICE After Hours — svaki s mogućnošću redovite produkcije fotografija, kratkih videa, recap objava i grafičkih materijala.','Važan dio prijedloga je da svaki događaj proizvodi sadržaj. Komunikacija bi imala četiri koraka: prije događaja najava i Reel, tijekom događaja dokumentacija i kratki intervjui, nakon događaja galerija i recap video, a dugoročno arhiva i kalendar događanja na DICE-ovu webu.','Koncept se temelji na mom iskustvu u organizaciji međunarodnih i studentskih događanja, vođenju programa i volonterskih timova, javnom nastupu te razvoju vizualnih i digitalnih projekata.'],items:['DICE Quiz Night — kvizovi otvoreni široj publici','DICE Table Club — šah, bela, briškula i trešeta','DICE Sessions — kratka predavanja o tehnologiji i digitalnim proizvodima','DICE After Hours — otvorena kavna druženja i neformalni susreti','Prije / tijekom / nakon / arhiva — sadržajni ciklus za svako događanje'],note:''},
+  en:{title:'Roll with DICE',lead:'The first phase of a community outreach project: quizzes, tournaments, public talks and open coffee meetups for everyone in Osijek.',role:'Campaign concept, event programming and digital communication',context:'Osijek · public event programme · employer branding and community outreach',paragraphs:['Roll with DICE is the first step of a longer-term effort to strengthen DICE’s local presence. Public quizzes, tournaments, talks and open coffee meetups would help connect the company with residents, students and future collaborators in Osijek.','The campaign combines social events, accessible educational content and digital promotion. The proposed formats are DICE Quiz Night, DICE Table Club, DICE Sessions and DICE After Hours, each designed to generate photography, short video, recap posts and graphic promotional materials.','A key part of the concept is that every event produces content. Communication would follow four stages: pre-event promotion and reels, on-site documentation and short interviews, post-event galleries and recap videos, and a long-term website archive and calendar.','The proposal builds on my experience in organising international and student events, running programmes and volunteer teams, public speaking, and developing visual and digital projects.'],items:['DICE Quiz Night — public quiz format','DICE Table Club — chess and local card-game evenings','DICE Sessions — short talks on technology and digital products','DICE After Hours — open coffee meetups and informal gatherings','Before / during / after / archive — a content cycle for each event'],note:''}
 }
 
 };
@@ -450,7 +448,7 @@ function safeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&
 function renderCase(id){
   const d=caseStudies[id];if(!d)return;openCaseId=id;const t=d[currentLang];
   document.getElementById('modal-kicker').textContent=d.index;
-  const photos=d.media ? `<div class="modal-photo-grid ${d.media.some(x=>x.type==='video')?'modal-video-grid':''} ${(id==='hrs'||id==='ljingle')?'modal-screens-grid':''}">${d.media.map((x,i)=>`<figure class="modal-photo${i===0?' modal-photo-main':''}">${x.type==='video'?`<video controls playsinline preload="metadata" poster="${safeHTML(x.poster)}"><source src="${safeHTML(x.src)}" type="video/mp4"></video>`:`<img src="${safeHTML(x.src)}" alt="${safeHTML(currentLang==='hr'?x.hr:x.en)}" loading="lazy">`}<figcaption>${safeHTML(currentLang==='hr'?x.hr:x.en)}${id==='cards'&&i<3?` <span class="ai-tag">AI</span>`:''}</figcaption></figure>`).join('')}</div>` : '';
+  const photos=d.media ? `<div class="modal-photo-grid ${d.media.some(x=>x.type==='video')?'modal-video-grid':''} ${(id==='hrs'||id==='ljingle')?'modal-screens-grid':''}">${d.media.map((x,i)=>`<figure class="modal-photo${i===0?' modal-photo-main':''}">${x.type==='video'?`<video controls playsinline preload="metadata" poster="${safeHTML(x.poster)}"><source src="${safeHTML(x.src)}" type="video/mp4"></video>`:`<img src="${safeHTML(x.src)}" alt="${safeHTML(currentLang==='hr'?x.hr:x.en)}" loading="lazy">`}<figcaption>${safeHTML(currentLang==='hr'?x.hr:x.en)}</figcaption></figure>`).join('')}</div>` : '';
   const links=d.links ? `<div class="modal-links">${d.links.map(x=>`<a href="${safeHTML(x.url)}" target="_blank" rel="noopener noreferrer">${safeHTML(x.label)} ↗</a>`).join('')}</div>` : '';
   modalContent.innerHTML=`<div class="modal-content-top"><h2 id="modal-title">${safeHTML(t.title||d.title)}</h2><p class="modal-sub">${safeHTML(t.lead)}</p></div>${photos}<div class="modal-details"><div><span class="modal-label">${currentLang==='hr'?'MOJA ULOGA':'MY ROLE'}</span><p>${safeHTML(t.role)}</p></div><div><span class="modal-label">${currentLang==='hr'?'KONTEKST':'CONTEXT'}</span><p>${safeHTML(t.context)}</p></div></div><div class="modal-body">${t.paragraphs.map(p=>`<p>${safeHTML(p)}</p>`).join('')}<h3>${currentLang==='hr'?'Područja rada':'Areas of work'}</h3><ul>${t.items.map(p=>`<li>${safeHTML(p)}</li>`).join('')}</ul>${t.note?`<div class="modal-note">${safeHTML(t.note)}</div>`:''}${links}</div>`;
 }
@@ -520,14 +518,12 @@ const aboutRotation=document.querySelector('.about-rotation');
 if(aboutRotation){
  const slides=[...aboutRotation.querySelectorAll('.about-rotation-slide')];
  const dots=[...aboutRotation.querySelectorAll('.about-rotation-indicators span')];
- const label=aboutRotation.querySelector('.about-rotation-caption');
  let idx=0,shown=true;
  const rotate=()=>{
   const prev=slides[idx];if(prev.tagName==='VIDEO')prev.pause();
   idx=(idx+1)%slides.length;
   slides.forEach((el,i)=>el.classList.toggle('is-active',i===idx));
   dots.forEach((el,i)=>el.classList.toggle('is-active',i===idx));
-  label.textContent=slides[idx].dataset.caption;
   if(slides[idx].tagName==='VIDEO'&&shown){slides[idx].currentTime=0;slides[idx].play().catch(()=>{});}
  };
  const observer=new IntersectionObserver(entries=>{shown=entries[0].isIntersecting;if(!shown)aboutRotation.querySelectorAll('video').forEach(v=>v.pause());else if(slides[idx].tagName==='VIDEO')slides[idx].play().catch(()=>{});},{threshold:.15});observer.observe(aboutRotation);
